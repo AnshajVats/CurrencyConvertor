@@ -22,7 +22,8 @@ function App() {
   }
   
   const convert = () => {
-    setConvertedAmount(amount * currencyInfo[to])
+    const num = (amount * currencyInfo[to])
+    setConvertedAmount(num.toFixed(2))
   }
 
   return (
